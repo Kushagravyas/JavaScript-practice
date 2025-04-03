@@ -11,4 +11,15 @@ let valueInNumber = Number(age);
 let isLoggedIn = 1;
 
 let booleanIsLoggedIn = Boolean(isLoggedIn);
-console.log(booleanIsLoggedIn);
+//console.log(booleanIsLoggedIn);
+
+
+//Next Topic
+
+// console.log(1 + 2);
+// console.log("1" + 2);
+// console.log("1" + 2 + 3);
+// console.log(1 + 2 + "3");
+// console.log(1 + "2" + "3");
+
+
