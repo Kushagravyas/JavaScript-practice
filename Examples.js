@@ -43,3 +43,10 @@ const Numbers = myNumbers.map( (num) => {
 })
 .filter( (num) => num >=35 )
 console.log(newNumbers);
+
+const bill = [100, 200, 300, 400]
+const totalBill = bill.reduce( (acc , currentValue) => { 
+    console.log("acc",acc);
+    console.log("cu",currentValue);
+    return acc + currentValue}, 4)
+console.log(totalBill);
