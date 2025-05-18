@@ -20,12 +20,3 @@ const menu = [
 
 const vegItems = menu.filter(item => item.isVeg);
 console.log(vegItems);
-
-
-const bill = [200, 300, 150];
-
-const total = bill.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue;
-}, 0);
-
-console.log("Total Bill:", total);
