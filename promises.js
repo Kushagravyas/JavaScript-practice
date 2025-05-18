@@ -20,3 +20,23 @@ async function load() {
 }
 
 load();
+
+
+
+function getFood() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("🍕 Food is ready");
+    }, 2000);
+  });
+}
+
+async function eatFood() {
+  console.log("Ordering food...");
+  const food = await getFood(); // Waits here until the promise resolves
+  console.log(food);
+  console.log("Now I'm eating!");
+}
+
+eatFood();
+
