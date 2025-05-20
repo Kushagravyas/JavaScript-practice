@@ -1,6 +1,6 @@
-// function add(a,b){
+// const add = (a,b) => {
 //     return a + b;
-// }
+// };
 
 // module.exports = add;
 
@@ -24,7 +24,7 @@ function div(a,b){
     return a/b;
 }
 
-module.exports = {add , div , mult , div}
+module.exports = {add , sub , mult , div};
 
 
 

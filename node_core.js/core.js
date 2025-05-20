@@ -7,18 +7,18 @@
 // | `path`   | Work with file paths           |
 // | `events` | Handle custom events           |
 
-// const add = require('./fs');
+// const add = require('./math');
 
-//   console.log(5 + 10);
+//   console.log(add(5,10));
 
-const {add , sub , mult , div} = require('./fs');
+const {add , sub , mult , div} = require('./math');
 
-console.log(5 + 10);
+console.log(add(5 , 10));
 
-console.log(50 - 10);
+console.log(sub(50 , 10));
 
-console.log(5 * 10);
+console.log(mult(5 , 10));
 
-console.log(50 / 10);
+console.log(div(50 , 10));
 
 
