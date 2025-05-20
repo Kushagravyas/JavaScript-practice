@@ -2,9 +2,9 @@ function fetchData(shouldSucceed) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (shouldSucceed) {
-        resolve("✅ Data loaded");
+        resolve(" Data loaded");
       } else {
-        reject("❌ Failed to load data");
+        reject("Failed to load data");
       }
     }, 1500);
   });
