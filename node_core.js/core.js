@@ -22,3 +22,5 @@ console.log(mult(5 , 10));
 console.log(div(50 , 10));
 
 
+
+
