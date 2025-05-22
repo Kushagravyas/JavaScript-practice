@@ -42,3 +42,25 @@ console.log(dup([4,4,5,5,6,6]));
 let A = [1,2,3,4,4,5,5];
 let B = [...new Set(A)];
 console.log(B);
+
+const bill = [100, 200, 300, 400]
+const totalBill = bill.reduce( (acc , currentValue) => { 
+    // console.log("acc",acc);
+    // console.log("cu",currentValue);
+    return acc + currentValue}, 4)
+console.log(totalBill);
+
+function sumArray(arr) {
+  return arr.reduce((acc, currentValue) => acc + currentValue, 0);
+}
+console.log(sumArray([1, 2, 3, 4])); 
+
+
+function array (arr) {
+    return arr.reduce((acc, value) => acc + value, 0);
+}
+console.log (array([1,2,3,4,5]));
+
+let a = [10,2,4,5];
+let b = a.reduce((sum, numbers) => sum + numbers,0);
+console.log(b);
