@@ -28,3 +28,7 @@ for (let i = str.length - 1; i >= 0; i--) {
 }
 console.log(reversed); // "olleh"
 
+let name = prompt("Enter your name:");
+console.log("Hello, " + name + "!");
+
+
