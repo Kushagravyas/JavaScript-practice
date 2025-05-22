@@ -19,16 +19,38 @@ console.log(reverseStr);
 
 let str1 = "hello";
 let reversed = str.split("").reduce((rev, char) => char + rev, "");
-console.log(reversed); // "olleh"
+console.log(reversed); 
 
 let str2 = "hello";
 let reversed1 = "";
 for (let i = str.length - 1; i >= 0; i--) {
-  reversed += str[i];
+  reversed1 += str2[i];
 }
-console.log(reversed); // "olleh"
-
-let name = prompt("Enter your name:");
-console.log("Hello, " + name + "!");
+console.log(reversed); 
 
 
+// string reverse without using builtin methods
+
+let str4 = "Hello Kushagra";
+let reversed4= "";
+for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+}
+console.log(reversed);
+
+// // using builtin method
+
+let myStr = "Hello Kushagra";
+let revStr = myStr.split("").reverse().join("");
+console.log(revStr);
+
+let my = "Hello Kushagra Vyas";
+let newStr = "";
+
+for(let i = my.length - 1; i >= 0; i--){
+    newStr += my[i]; 
+}console.log(newStr);
+
+let greet = "Hello Kushagra Vyas";
+let revGreet = greet.split(' ').reverse().join(' ');
+console.log(revGreet);
