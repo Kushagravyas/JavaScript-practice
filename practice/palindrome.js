@@ -26,6 +26,27 @@ function factorial(n) {
 }
 console.log(factorial(5)); 
 
+function fact(n) {
+    if (n === 0) return 1;
+    return n * fact(n - 1);
+}
+  console.log(fact(3));
+
+function factorial1(n){
+    if(n === 0) {return 1;}
+    else{
+        return n * factorial(n - 1);
+    }
+}
+console.log(factorial1(4));
+
+function fact1(n){
+    if(n === 0) return 1;
+    return n * fact1(n - 1);
+}
+ console.log(fact1(6));
+ 
+
 
 
 
