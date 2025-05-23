@@ -54,3 +54,6 @@ for(let i = my.length - 1; i >= 0; i--){
 let greet = "Hello Kushagra Vyas";
 let revGreet = greet.split(' ').reverse().join(' ');
 console.log(revGreet);
+
+
+
