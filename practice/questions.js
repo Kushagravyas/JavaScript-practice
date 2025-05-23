@@ -106,6 +106,35 @@ function cap(str) {
 console.log(cap("hello world"));
 
 
+function count() {
+   let counter = 0;
+   return  function() {counter++;
+                 return counter;
+                };
+            };
+const outer = count();
+console.log(outer());
+console.log(outer());
+console.log(outer());
+
+
+function my() {
+    let B = 0;
+    return function(){
+        B++;
+        return B;
+    };
+};
+
+const C = my();
+console.log(C());
+console.log(C());
+
+
+function sum(...nums) {
+    return nums.reduce((a,b) => a + b, 0);
+}
+console.log(sum(1,2,3,4));
 
 
 

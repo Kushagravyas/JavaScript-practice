@@ -7,7 +7,7 @@ cart.forEach(item => {
 
 const prices = [100, 200, 300];       
 // .map works on all iteams present in array
-const discountedPrices = prices.map(price => price * 0.9);  
+const discountedPrices = prices.map(price => price * 2);  
 
 console.log(discountedPrices);
 
@@ -50,3 +50,25 @@ const totalBill = bill.reduce( (acc , currentValue) => {
     console.log("cu",currentValue);
     return acc + currentValue}, 4)
 console.log(totalBill);
+
+// async function fetchUser() {
+//   try {
+//     const res = await fetch("https://api.invalidurl.com/user");
+//     const data = await res.json();
+//     console.log(data);
+//   } catch (err) {
+//     console.error("Error fetching:", err);
+//   }
+// }
+
+
+async function fetchUser() {
+  try {
+    const res = await fetch("");
+    const data = await res.json();
+    console.log(data)
+  }
+  catch(err) {
+    console.error("Error fetching", err)
+  }
+}
