@@ -59,3 +59,12 @@ function factorial1 (n){
     return result;
 }
 console.log(factorial1(3));
+
+function factorial5 (n){
+    result = 1;
+    for (let i = 2; i <= n; i++){
+        result *= i; 
+    }
+    return result;
+}
+console.log(factorial5(5));
