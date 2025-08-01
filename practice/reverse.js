@@ -33,8 +33,8 @@ console.log(reversed);
 
 let str4 = "Hello Kushagra";
 let reversed4= "";
-for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
+for (let i = str4.length - 1; i >= 0; i--) {
+    reversed += str4[i];
 }
 console.log(reversed);
 
@@ -54,6 +54,7 @@ for(let i = my.length - 1; i >= 0; i--){
 let greet = "Hello Kushagra Vyas";
 let revGreet = greet.split(' ').reverse().join(' ');
 console.log(revGreet);
+
 
 
 
