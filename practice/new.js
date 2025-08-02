@@ -68,3 +68,36 @@ function factorial5 (n){
     return result;
 }
 console.log(factorial5(5));
+
+// isPrime
+
+function isPrime(n) {
+    if(n <= 1) return false;
+
+    for (let i = 2; i <= Math.sqrt(n); i++){
+        if(n % i === 0) return false;
+        else return true;
+    }
+}
+
+console.log(isPrime(7))
+
+function prime(n){
+    if (n <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(n); i++){
+        if (n % i === 0) return false;   
+    }
+     return true;
+} 
+console.log(prime(15))
+
+// odd or even
+
+function checkEvenOrOdd(n){
+    if(n % 2 === 0){
+        console.log("Even")
+    } else {
+        console.log("Odd")
+    }
+}
+checkEvenOrOdd(5);
