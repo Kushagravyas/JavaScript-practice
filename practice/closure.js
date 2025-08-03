@@ -35,3 +35,27 @@ function outer() {
   }
  };
  user.greet();
+
+ function my() {
+    let a = 1;
+
+    return function your() {
+      a++;
+      return a;
+    };
+ }
+
+ let our = my();
+ console.log(our());
+ console.log(our());
+
+ function outside() {
+  let B = 10;
+
+  return function inside() {
+    B++;
+    return B ;
+  }
+ }
+ let out = outside();
+ console.log(out());
