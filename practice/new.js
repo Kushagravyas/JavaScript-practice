@@ -101,3 +101,51 @@ function checkEvenOrOdd(n){
     }
 }
 checkEvenOrOdd(5);
+
+// function fizzBuzz(n) {
+//     for (let i = 1; i <= n; i++){
+//         if(i % 3 === 0 && i % 5 === 0 ){
+//             console.log("FizzBuzz");
+//         } else if (i % 3 === 0){
+//             console.log("Fizz");
+//         } else if (i % 5 === 0){
+//             console.log("Buzz");
+//         } else {
+//             console.log(i)
+//         }
+//     }
+// }
+// fizzBuzz(27);
+
+// function buzzFizz(n) {
+//     for (let i = 1; i <= n; i++){
+//         if(i % 3 === 0 && i % 7 === 0){
+//             console.log("FizzBuzz");
+//         } else if (i % 3 === 0){
+//             console.log("Fizz");
+//         } else if (i % 7 === 0){
+//             console.log("Buzz");
+//         } else {
+//             console.log(i)
+//         }
+//     }
+// }
+// buzzFizz(21);
+
+function headTell(n) {
+  const result = [];
+
+  for (let i = 1; i <= n; i++){
+    if (i % 3 === 0 && i % 5 === 0){
+        result.push("headTell");
+    } else if ( i % 3 === 0) {
+        result.push("Head");
+    } else if (i % 5 === 0){
+        result.push("Tell");
+    } else {
+        result.push(i)
+    }
+  }
+  return result;
+}
+console.log(headTell(15));
