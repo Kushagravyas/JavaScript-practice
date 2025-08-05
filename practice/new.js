@@ -149,3 +149,43 @@ function headTell(n) {
   return result;
 }
 console.log(headTell(15));
+
+function factorialA(n) {
+    let result = 1;
+    for (let i = 2; i <= n; i++){
+        result = result * i;
+    }
+    return result;
+}
+console.log(factorialA(2));
+
+function factorialC(n) {
+    let result = 1;
+    for (let i = 2; i <= n; i++){
+        result = result * i;
+    }
+    return result;
+}
+
+console.log(factorialC(5));
+
+// simple way of Factorial
+
+function factorialB(n){
+  if (n === 0 || n === 1) return 1;
+else return (n * factorialB(n - 1));
+}
+ console.log(factorialB(3));
+
+//  Sum of number in an array
+
+function sumArray(arr){
+    let sum = 0;
+    for (let i = 0; i <= arr.length-1; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
+let number = [1,2,3,4,5];
+console.log(sumArray(number));
+
