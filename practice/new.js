@@ -189,3 +189,13 @@ function sumArray(arr){
 let number = [1,2,3,4,5];
 console.log(sumArray(number));
 
+function sumArray1(arr){
+   let sum = 0;
+   for (let i = 0; i < arr.length; i++){
+    sum += arr[i];
+   }
+   return sum;
+}
+// let numbers = [10,20,30,40];
+console.log(sumArray1([10,20,30,40]));
+
