@@ -41,6 +41,13 @@ function oddEven(n) {
 }
 oddEven(3);
 
-function oddEven1() {
-  let result 
+function oddEven1(n) {
+  let result;
+  if (n % 2 === 0){
+    result = "Even";
+  } else {
+    result = "Odd";
+  }
+  return result;
 }
+console.log(oddEven1(4));
