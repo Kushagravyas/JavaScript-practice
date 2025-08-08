@@ -160,4 +160,19 @@ function outer() {
  let newCount = outer();
  console.log(newCount());
 
+ function f(n) {
+   let result = 1;
+
+   for (let i = 2; i <= n; i++){
+        result *= i;
+   }
+   return result;
+ }
+ console.log(f(5))
+
+ function F1(n) {
+  if(n === 0 || n === 1) return 1;
+   return n *= factorial(n - 1);
+ }
+ console.log(F1(3))
  
