@@ -1,15 +1,15 @@
-// function outer() {
-//     let count = 1;
+function outer() {
+    let count = 1;
 
-//     return function inner() {
-//         count++;
-//      return count;   
-//     };
-// }
+    return function inner() {
+        count++;
+     return count;   
+    };
+}
 
-// let counter = outer();
-// console.log(counter());
-// console.log(counter());
+let counterss = outer();
+console.log(counterss());
+console.log(counterss());
 
 function outer() {
     let count = 0;
@@ -176,3 +176,15 @@ function outer() {
  }
  console.log(F1(3))
  
+
+function outer() {
+  let count = 0;
+
+  return function inner() {
+    count++;
+    return count;
+  }
+}
+let counters = outer();
+console.log(counters());
+console.log(counters());
