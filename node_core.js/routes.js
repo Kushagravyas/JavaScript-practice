@@ -16,3 +16,20 @@ app.get('/user/:id', (req, res) => {
 app.listen (3000, () => console.log("Server is running on port 3000"));
 
 
+const express = require("express");
+const apps = express();
+
+app.get('/', (req, res) => {
+    res.send("welcome to homepage!");
+});
+
+app.post('/submit', (req, res) => {
+    res.send("User submitted!");
+});
+
+app.get('/user/:id', (req, res) => {
+    res.send(`user ID: ${req.params.id}`);
+});
+
+app.listen (3000, () => console.log("Server is listening on port 3000"));
+
