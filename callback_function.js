@@ -59,3 +59,31 @@ function getUser(callback) {
     callback(name);
 }
 getUser(get);
+
+
+function start(callback) {
+    console.log("Execution Start !");
+
+    setTimeout( () => {
+     console.log("This will take 2 seconds");
+     callback();
+    }, 2000);
+};
+
+function End() {
+    console.log("Execution End!");
+};
+start(End);
+
+function isReady(callback) {
+   console.log("Order recieved!");
+
+   setTimeout(() => {
+    console.log("Order is getting ready!");
+    callback();
+   }, 2000);
+};
+function orderReady() {
+    console.log("order cooked!")
+};
+isReady(orderReady)
