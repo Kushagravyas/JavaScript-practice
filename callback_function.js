@@ -75,6 +75,8 @@ function End() {
 };
 start(End);
 
+// Asynchronous callback
+
 function isReady(callback) {
    console.log("Order recieved!");
 
