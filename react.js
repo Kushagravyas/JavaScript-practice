@@ -1,40 +1,40 @@
-// UseState (React Hook) practice
+// // UseState (React Hook) practice
 
-import React, {useState} from "react";
+// import React, {useState} from "react";
 
-function Counter () {
-    const [count, setCount] = useState(0);
+// function Counter () {
+//     const [count, setCount] = useState(0);
 
-    const increment = () => {
-        setCount(count + 1);
-    };
+//     const increment = () => {
+//         setCount(count + 1);
+//     };
 
-    return (
-        <div>
-            <h2> count: {count}</h2>
-            <button onClick={increment}>Increment</button>
-        </div>
-    );
-};
-export default Counter;
+//     return (
+//         <div>
+//             <h2> count: {count}</h2>
+//             <button onClick={increment}>Increment</button>
+//         </div>
+//     );
+// };
+// export default Counter;
 
-import React, {useState} from "react";
+// import React, {useState} from "react";
 
-function Bounter() {
-    const [count, setCount] = useState(0);
+// function Bounter() {
+//     const [count, setCount] = useState(0);
 
-    const increment = () => {
-        setCount(count + 1);
-    };
+//     const increment = () => {
+//         setCount(count + 1);
+//     };
 
-    return (
-        <div>
-        <h2> count: {count}</h2>
-        <button onClick={increment}>Increment</button>
-    </div>
-    )
+//     return (
+//         <div>
+//         <h2> count: {count}</h2>
+//         <button onClick={increment}>Increment</button>
+//     </div>
+//     )
     
-};
+// };
 
-export default Bounter;
+// export default Bounter;
 
