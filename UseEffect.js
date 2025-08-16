@@ -20,7 +20,7 @@ function Counter() {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        console.log("Component rerender or count chamged : ", {count});
+        console.log("Component rerender or count changed : ", {count});
     }, [count]);
 
     return(
