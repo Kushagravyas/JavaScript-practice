@@ -35,3 +35,21 @@ function Counter() {
 };
 export default Counter;
 
+// useEffect simple code practice.
+
+import React, {useEffect, useState} from "react";
+
+function Counter() {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        console.log("Count Changed :", count);
+    }, [count]);
+
+    return(
+        <div>
+            <h2>count : {count}</h2>
+            <button onClick = {() => setCount(count => count + 1)}> Increment </button>
+        </div>
+    );
+};
